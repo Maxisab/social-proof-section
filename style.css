@@ -1,0 +1,113 @@
+:root {
+    --darkmagenta--: hsl(300, 43%, 22%);
+    --softpink--: hsl(333, 80%, 67%);
+    --darkgrey--: hsl(303, 10%, 53%);
+    --lightgrey--: hsl(300, 24%, 96%);
+    --white--: hsl(0, 0%, 100%);
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Spartan;
+    font-size: 15px;
+    background: 
+        url(/images/bg-pattern-top-mobile.svg) left top no-repeat,
+        url(/images/bg-pattern-bottom-mobile.svg) bottom right no-repeat;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+.main {
+    margin-top: 4rem;
+    text-align: center;
+    color: var(--darkmagenta--);
+}
+
+.main h1 {
+    line-height: 2rem;
+    font-weight: 700;
+}
+
+.main p {
+    line-height: 1.5rem;
+    padding-top: 1.5rem;
+    font-size: 14px;
+}
+
+.star-ratings {
+    margin-top: 2rem;
+}
+
+.stars {
+    background-color: var(--lightgrey--);
+    margin-top: 1rem;
+    border-radius: 8px;
+    padding: 1rem 3rem;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--darkmagenta--);
+}
+
+.stars-img img{
+    padding: 0 .2rem;
+}
+
+.stars-text {
+    padding-top: .5rem;
+}
+
+.buyers {
+    color: var(--white--);
+    margin-top: 3rem;
+    margin-bottom: 5rem; /*not working?*/
+}
+
+.card {
+    background-color: var(--darkmagenta--);
+    margin-top: 1rem;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.buyers img {
+    border-radius: 50%;
+    width: 20%;
+    margin-right: 1rem;
+}
+
+.card-header {
+    display: flex;
+}
+
+.card p {
+    font-size: 13px;
+    padding-top: 2rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+
+.card-name p {
+    line-height: 1.5rem;
+    padding-top: 0;
+}
+
+.card-name p:nth-child(1){
+    font-weight: 700;
+}
+
+.card-name p:nth-child(2){
+    color: var(--softpink--);
+}
